@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "outputText"></p>
+    <script>
+        var text1 = "ten";
+        var text2 = "5";
+        var num1 = stringtoNumber(text1);
+        var num2 = stringtoNumber(text2);
+
+        document.getElementById("outputText").innerHTML = num1 + num2; 
+
+        function stringtoNumber(text) {
+            return parseInt(text);
+        }
+
+    </script>
+    
+</body>
+</html>
