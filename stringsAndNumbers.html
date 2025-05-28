@@ -8,12 +8,17 @@
 <body>
     <p id = "outputText"></p>
     <script>
-        var text1 = "ten";
+        var text1 = "10";
         var text2 = "5";
         var num1 = stringtoNumber(text1);
         var num2 = stringtoNumber(text2);
 
-        document.getElementById("outputText").innerHTML = num1 + num2; 
+        if (isNaN(num1) || isNaN(num2)) {
+            document.getElementById("outputText").innerHTML = "You have not entered a valid number. Please try again.";
+        }else {
+            document.getElementById("outputText").innerHTML = num1 + num2; 
+        }
+        
 
         function stringtoNumber(text) {
             return parseInt(text);
